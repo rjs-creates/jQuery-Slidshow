@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ica8.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="ica8.js" type="text/javascript"></script>    
+    <title>ica8</title>
+</head>
+<body id = "grid1">
+    <header id = "Head">
+        <h1>Raj's Ica08 jQuery SlideShow</h1>
+    </header>
+    <div id="grid2">
+      <div id="pContainer"><img id="mainPhoto" src="" alt="pictures will go here"></div>
+      <div id="mid">
+        <div id="previous"><img class="icons" id="previousI" src="../images/ica7_Photos/next.png" alt=""></div>
+      <!--<div id="Caption">Stuff will go here</div> -->
+      <textarea name="ImageName" id="Caption" cols="40" rows="1"></textarea>
+      <div id="next"><img class="icons" src="../images/ica7_Photos/next.png" alt=""></div>      
+      </div>
+      <div id="play">
+        <div>
+            <select name="trans" id = "select" style="background-color: gold;">
+                <option value="" disabled>Please Pick one</option>
+                <option value="1">Fade in/Fade Out</option>
+                <option value="2">Slide in/SlideOut</option>
+            </select>
+        </div>  
+        <img id="playP" class="icons" src="../images/ica7_Photos/play.png" alt="">
+        <div id="radio">
+            <input type="radio" style="" value=300 name="time">
+            <label for=300>300ms</label>
+            <input type="radio" value=900 name="time">
+            <label for=900>900ms</label>  
+            <input type="radio" value=2000 name="time">
+            <label for=2000>2000ms</label>
+        </div>
+    </div>
+    </div>
+    <footer>
+        ©2020 by Raj<br>
+    
+        <section id="footer">
+        <script >
+            var d = new Date();
+            document.getElementById("footer").innerHTML = "last Modified On: "+d.toLocaleString();
+         </script>
+        </section>
+    </footer>
+</body>
+</html>
